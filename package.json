@@ -14,8 +14,7 @@
     "coding",
     "dev"
   ],
-  "author": "Ryan Fitzgerald",
-  "license": "MIT",
+  "author": "Prasenjit Kaninde",
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
