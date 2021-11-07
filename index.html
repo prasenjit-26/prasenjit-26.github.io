@@ -1,358 +1,619 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Prasenjit Kaninde - Full Stack Developer</title>
+    <meta name="title" content="Prasenjit Kaninde - Full Stack Developer" />
+    <meta
+      name="description"
+      content="Full Stack Developer based in Pune, India."
+    />
+    <meta
+      name="twitter:title"
+      content="Prasenjit Kaninde - Full Stack Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Full Stack Developer based in Pune, India."
+    />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/PMXVh4M/prasenjit-1.jpg"
+    />
+    <meta
+      property="twitter:image"
+      content="https://i.ibb.co/PMXVh4M/prasenjit-1.jpg"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="all,follow" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-183101174-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Prasenjit Kaninde - Full Stack Developer</title>
-  <meta name="title" content="Prasenjit Kaninde - Full Stack Developer">
-  <meta name="description" content="Full Stack Developer based in Pune, India.">
-  <meta name="twitter:title" content="Prasenjit Kaninde - Full Stack Developer">
-  <meta name="twitter:description" content="Full Stack Developer based in Pune, India.">
-  <meta property="og:image" content="https://i.ibb.co/PMXVh4M/prasenjit-1.jpg">
-  <meta property="twitter:image" content="https://i.ibb.co/PMXVh4M/prasenjit-1.jpg">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="all,follow">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-183101174-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      gtag("config", "UA-183101174-1");
+    </script>
+    <script>
+      window.ga =
+        window.ga ||
+        function () {
+          (ga.q = ga.q || []).push(arguments);
+        };
+      ga.l = +new Date();
+      ga("create", "UA-183101174-1", "auto");
+      // ga("require", "autotrack");
+      ga("send", "pageview");
+    </script>
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <!-- Google fonts-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,800&amp;display=swap"
+    />
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.sea.css" id="theme-stylesheet" />
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css" />
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/prasenjit-1.jpg" />
+    <!-- Tweaks for older IEs-->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script
+    ><![endif]-->
+  </head>
 
-    gtag('config', 'UA-183101174-1');
-  </script>
-  <script>
-    window.ga = window.ga
-      || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
-    ga('create', 'UA-183101174-1', 'auto');
-    // ga("require", "autotrack");
-    ga('send', 'pageview');
-  </script>
-  <!-- Bootstrap CSS-->
-  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-  <!-- Google fonts-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,800&amp;display=swap">
-  <!-- theme stylesheet-->
-  <link rel="stylesheet" href="css/style.sea.css" id="theme-stylesheet">
-  <!-- Custom stylesheet - for your changes-->
-  <link rel="stylesheet" href="css/custom.css">
-  <!-- Favicon-->
-  <link rel="shortcut icon" href="img/prasenjit-1.jpg">
-  <!-- Tweaks for older IEs-->
-  <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-</head>
-
-<body>
-  <!-- navbar-->
-  <header class="header">
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container"><a class="navbar-brand" href="#"><img class="profilepicture" src="img/prasenjit.jpg" alt=""></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link link-scroll active" href="#hero">Home <span
-                  class="sr-only">(current)</span></a></li>
-            <li class="nav-item"><a class="nav-link link-scroll" href="#about">Projects</a></li>
-            <li class="nav-item"><a class="nav-link link-scroll" href="#expertise">Expertise</a></li>
-            <li class="nav-item"><a class="nav-link link-scroll" href="#education">Education</a></li>
-            <li class="nav-item"><a class="nav-link link-scroll" href="#experience">Experience</a></li>
-            <li class="nav-item"><a class="nav-link link-scroll" href="#contact">Contact</a></li>
-          </ul>
+  <body>
+    <!-- navbar-->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img class="profilepicture" src="img/prasenjit.jpg" alt=""
+          /></a>
+          <button
+            class="navbar-toggler navbar-toggler-right"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link link-scroll active" href="#hero"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-scroll" href="#about">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-scroll" href="#expertise">Expertise</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-scroll" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-scroll" href="#experience"
+                  >Experience</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-scroll" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
-  <!-- Hero Section-->
-  <section class="hero bg-cover bg-center mt-5" id="hero">
-    <div class="container index-forward">
-      <div class="row">
-        <div class="col-md-8 text-white">
-          <h2 class="h4 text-primary font-weight-normal mb-0">Hi, I am</h2>
-          <h1 class="text-uppercase text-lg mb-2 mt-2">Prasenjit <span class="text-primary">Kaninde</span></h1>
-          <h2 class="h4 font-weight-normal mb-4">Full Stack Developer</h2>
-          <a class="download-button mb-4" href="https://drive.google.com/open?id=11OqU5YI84Uf2O8yz7d4YpSuTBYStCiPq" target="_blank">Download Resume</a>
-          <p class="text-shadow mt-4">I'm a Full Stack Developer based in Pune, India.</p>
-          <p class="text-shadow">I enjoy turning complex problems into simple, beautiful and intuitive solutions. When
-            I'm not coding, tweeting , you'll find me travelling, or watching some series or movies or playing a game of chess.</p>
-        </div>
-        <div class="col-md-4 text-white" style="display: flex; justify-content:center;">
-          <img src="img/user.gif" alt="coding">
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- About Section-->
-  <section class="bg-light" id="about">
-    <div class="container">
-      <header class="mb-5">
-        <p class="font-weight-bold text-primary text-uppercase letter-spacing-3">Innovative solutions</p>
-        <h2 class="text-uppercase lined">PROJECTS</h2>
-      </header>
-      <div class="row">
-        <div class="col-md-6 mb-5">
-          <h3 class="h4">
-            <span class="text-primary mr-2">01</span>
-            <a href="https://cvap.plexusmd.com/">CVAP</a>
-          </h3>
-          <p class="text-muted text-small ml-4 pl-3">
-            COVID-19 VACCINATION AWARENESS PROGRAM (CVAP) is interactive 15-minute learning journey to understand how we developed the vaccines, how they work and why they are safe and every Indian must go for it without fear and hesitation. It is built using React.js, Node.js, Cosmos DB, Azure
+      </nav>
+    </header>
+    <!-- Hero Section-->
+    <section class="hero bg-cover bg-center mt-5" id="hero">
+      <div class="container index-forward">
+        <div class="row">
+          <div class="col-md-8 text-white">
+            <h2 class="h4 text-primary font-weight-normal mb-0">Hi, I am</h2>
+            <h1 class="text-uppercase text-lg mb-2 mt-2">
+              Prasenjit <span class="text-primary">Kaninde</span>
+            </h1>
+            <h2 class="h4 font-weight-normal mb-4">Full Stack Developer</h2>
+            <a
+              class="download-button mb-4"
+              href="https://drive.google.com/open?id=11OqU5YI84Uf2O8yz7d4YpSuTBYStCiPq"
+              target="_blank"
+              >Download Resume</a
+            >
+            <p class="text-shadow mt-4">
+              I'm a Full Stack Developer based in Pune, India.
             </p>
+            <p class="text-shadow">
+              I enjoy turning complex problems into simple, beautiful and
+              intuitive solutions. When I'm not coding, tweeting , you'll find
+              me travelling, or watching some series or movies or playing a game
+              of chess.
+            </p>
+          </div>
+          <div
+            class="col-md-4 text-white"
+            style="display: flex; justify-content: center"
+          >
+            <img src="img/user.gif" alt="coding" />
+          </div>
         </div>
-        <div class="col-md-6 mb-5">
+      </div>
+    </section>
+    <!-- About Section-->
+    <section class="bg-light" id="about">
+      <div class="container">
+        <header class="mb-5">
+          <p
+            class="
+              font-weight-bold
+              text-primary text-uppercase
+              letter-spacing-3
+            "
+          >
+            Innovative solutions
+          </p>
+          <h2 class="text-uppercase lined">PROJECTS</h2>
+        </header>
+        <div class="row">
+          <div class="col-md-6 mb-5">
             <h3 class="h4">
-              <span class="text-primary mr-2">02</span>
-              <a href="https://cvtp.plexusmd.com/">CVTP</a>
+              <span class="text-primary mr-2">01</span>
+              <a href="https://app.polydex.org/" target="_blank">PolyDex</a>
             </h3>
             <p class="text-muted text-small ml-4 pl-3">
-              COVID-19 VACCINATION Training PROGRAM (CVTP) is interactive 15-minute learning journey for health workers to have adequate training and expertise accompanied with the right knowledge about vaccination.. It is built using React.js, Node.js, Cosmos DB, Azure
-              </p>
+              A completely gasless, instant, cross-chain AMM DEX with yield
+              farming. It is built using React.js, Redux, Web3, Ether.js, AWS,
+              Nginx
+            </p>
           </div>
-        <div class="col-md-6 mb-5">
-          <h3 class="h4"><span class="text-primary mr-2">03</span><a href="https://covid19.plexusmd.com/">CCMC</a></h3>
-          <p class="text-muted text-small ml-4 pl-3">
-            CCMC is an online training program specially designed by the Government of Gujarat to help doctors, nurses
-            and healthcare workers learn about the latest aspects of management and care of Covid-19 patients as well as
-            aspects of self-protection and infection prevention and control.
-          </p>
-        </div>
-        <div class="col-md-6 mb-5 mb-md-0">
-          <h3 class="h4"><span class="text-primary mr-2">04</span><a
-              href="https://www.plexusmd.com/md/openings">PlexusMD Careers</a></h3>
-          <p class="text-muted text-small ml-4 pl-3">Careers Platform for doctors and medical students who are looking
-            for job changes, I have used React.js, Node.js, Redux for this project and JSON-LD used for SEO. It is
-            deployed on AWS </p>
-        </div>
-        <div class="col-md-6">
-          <h3 class="h4"><span class="text-primary mr-2">05</span><a href="https://vivasim.plexusmd.com/">PlexusMD
-              VIVASIM</a></h3>
-          <p class="text-muted text-small ml-4 pl-3">Indias 1st e-quizzing platform for medical students</p>
-        </div>
-        <div class="col-md-6">
-          <h3 class="h4"><span class="text-primary mr-2">06</span><a href="cmup.plexusmd.com">E-learning Platforms</a></h3>
-          <p class="text-muted text-small ml-4 pl-3">
-            <a href="cmup.plexusmd.com">CMUP</a> is a e-larning platform for medical students , it is build using
-            react.js and node.js and deployed on azure
-          </p>
+          <div class="col-md-6 mb-5">
+            <h3 class="h4">
+              <span class="text-primary mr-2">02</span>
+              <a href="https://shiboshis.shibaswap.com/#/" target="_blank"
+                >SHIBOSHIS</a
+              >
+            </h3>
+            <p class="text-muted text-small ml-4 pl-3">
+              SHIBOSHIS is NFT marketplace where a collection of 10,000
+              exclusive Shiba Inu generated Non Fungible Tokens (NFTS).I was
+              Involved in building the frontend and all contract integrations.
+              It is built using React.js, Web3, Redux
+            </p>
+          </div>
+          <div class="col-md-6 mb-5">
+            <h3 class="h4">
+              <span class="text-primary mr-2">03</span
+              ><a href="https://cvap.plexusmd.com/" target="_blank">CVAP</a>
+            </h3>
+            <p class="text-muted text-small ml-4 pl-3">
+              COVID-19 VACCINATION AWARENESS PROGRAM (CVAP) is interactive
+              15-minute learning journey to understand how we developed the
+              vaccines, how they work and why they are safe and every Indian
+              must go for it without fear and hesitation. It is built using
+              React.js, Node.js, Cosmos DB, Azure
+            </p>
+          </div>
+          <div class="col-md-6 mb-5 mb-md-0">
+            <h3 class="h4">
+              <span class="text-primary mr-2">04</span
+              ><a href="https://www.plexusmd.com/md/openings" target="_blank"
+                >PlexusMD Careers</a
+              >
+            </h3>
+            <p class="text-muted text-small ml-4 pl-3">
+              Careers Platform for doctors and medical students who are looking
+              for job changes, I have used React.js, Node.js, Redux for this
+              project and JSON-LD used for SEO. It is deployed on AWS
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h3 class="h4">
+              <span class="text-primary mr-2">05</span
+              ><a href="https://vivasim.plexusmd.com/" target="_blank"
+                >PlexusMD VIVASIM</a
+              >
+            </h3>
+            <p class="text-muted text-small ml-4 pl-3">
+              Indias 1st e-quizzing platform for medical students
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h3 class="h4">
+              <span class="text-primary mr-2">06</span
+              ><a href="cmup.plexusmd.com">E-learning Platforms</a>
+            </h3>
+            <p class="text-muted text-small ml-4 pl-3">
+              <a href="cmup.plexusmd.com">CMUP</a> is a e-larning platform for
+              medical students , it is build using react.js and node.js and
+              deployed on azure
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Expertise Section        -->
-  <section id="expertise">
-    <div class="container">
-      <header class="mb-5 pb-4">
-        <p class="font-weight-bold text-primary text-uppercase letter-spacing-3">Batman would be jealous.</p>
-        <h2 class="text-uppercase lined">Expertise</h2>
-      </header>
-      <div class="row">
-        <div class="col-md-6 mb-5">
-          <h3 class="h4"><span class="text-primary mr-2">01</span>Web Development</h3>
-          <p class="text-muted text-small ml-4 pl-3">
-            I'm having experience in end to end web development process using
-            React.js with redux, Node.js, Nginx, MysQL </p>
-        </div>
-        <div class="col-md-6 mb-5">
-          <h3 class="h4"><span class="text-primary mr-2">02</span>REST API Developemt</h3>
-          <p class="text-muted text-small ml-4 pl-3">Experienced in REST api creation using Express.js and Loopback.js
+    </section>
+    <!-- Expertise Section        -->
+    <section id="expertise">
+      <div class="container">
+        <header class="mb-5 pb-4">
+          <p
+            class="
+              font-weight-bold
+              text-primary text-uppercase
+              letter-spacing-3
+            "
+          >
+            Batman would be jealous.
           </p>
-        </div>
-        <div class="col-md-6 mb-5 mb-md-0">
-          <h3 class="h4"><span class="text-primary mr-2">03</span>Database Design</h3>
-          <p class="text-muted text-small ml-4 pl-3">Having experience in designing efficiant database architecture ,
-            worked on MySQL </p>
-        </div>
-        <div class="col-md-6">
-          <h3 class="h4"><span class="text-primary mr-2">04</span>Cloud Services</h3>
-          <p class="text-muted text-small ml-4 pl-3">Deployed various applications on AWS and Azure with nginx
-            configuration as load balancer and revers proxy server</p>
+          <h2 class="text-uppercase lined">Expertise</h2>
+        </header>
+        <div class="row">
+          <div class="col-md-6 mb-5">
+            <h3 class="h4">
+              <span class="text-primary mr-2">01</span>Web Development
+            </h3>
+            <p class="text-muted text-small ml-4 pl-3">
+              I'm having experience in end to end web development process using
+              React.js with redux, Node.js, Nginx, MysQL
+            </p>
+          </div>
+          <div class="col-md-6 mb-5">
+            <h3 class="h4">
+              <span class="text-primary mr-2">02</span>Web3 Integration
+            </h3>
+            <p class="text-muted text-small ml-4 pl-3">
+              I'm having experience in integration of smart contarcts with frontend using Web3 and Ether.js
+            </p>
+          </div>
+          <div class="col-md-6 mb-5">
+            <h3 class="h4">
+              <span class="text-primary mr-2">03</span>REST API Developemt
+            </h3>
+            <p class="text-muted text-small ml-4 pl-3">
+              Experienced in REST api creation using Express.js and Loopback.js
+            </p>
+          </div>
+          <div class="col-md-6 mb-5 mb-md-0">
+            <h3 class="h4">
+              <span class="text-primary mr-2">04</span>Database Design
+            </h3>
+            <p class="text-muted text-small ml-4 pl-3">
+              Having experience in designing efficiant database architecture ,
+              worked on MySQL
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h3 class="h4">
+              <span class="text-primary mr-2">05</span>Cloud Services
+            </h3>
+            <p class="text-muted text-small ml-4 pl-3">
+              Deployed various applications on AWS and Azure with nginx
+              configuration as load balancer and revers proxy server
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Education Section-->
-  <section class="bg-light" id="education">
-    <div class="container">
-      <header class="mb-5 pb-4">
-        <p class="font-weight-bold text-primary text-uppercase letter-spacing-3">Lazy isn't in my vocabulary.</p>
-        <h2 class="text-uppercase lined">Education</h2>
-      </header>
-      <!--  Timeline -->
-      <ul class="timeline">
-        <!-- Timeline item-->
-        <li class="timeline-item ml-3 pb-4">
-          <div class="timeline-arrow"></div>
-          <div class="row no-gutter">
-            <div class="col-lg-5 mb-4 mb-lg-0">
-              <p class="font-weight-bold mb-2 text-primary text-small">2014 - 2018 </p>
-              <h2 class="h5 mb-0 text-uppercase">Bachelor of Technology in Computer Science</h2>
-              <p class="text-small mb-0">Vishwakarma Institute of Technology</p><span class="small text-muted">Pune,
-                India</span>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <!-- Experience Section        -->
-  <section id="experience">
-    <div class="container">
-      <header class="mb-5 pb-4">
-        <p class="font-weight-bold text-primary text-uppercase letter-spacing-3">Yes. I've been around.</p>
-        <h2 class="text-uppercase lined">Experience</h2>
-      </header>
-      <!--  Timeline -->
-      <ul class="timeline">
-        <!-- Timeline item-->
-        <li class="timeline-item ml-3 pb-4">
+    </section>
+    <!-- Education Section-->
+    <section class="bg-light" id="education">
+      <div class="container">
+        <header class="mb-5 pb-4">
+          <p
+            class="
+              font-weight-bold
+              text-primary text-uppercase
+              letter-spacing-3
+            "
+          >
+            Lazy isn't in my vocabulary.
+          </p>
+          <h2 class="text-uppercase lined">Education</h2>
+        </header>
+        <!--  Timeline -->
+        <ul class="timeline">
+          <!-- Timeline item-->
+          <li class="timeline-item ml-3 pb-4">
             <div class="timeline-arrow"></div>
             <div class="row no-gutter">
               <div class="col-lg-5 mb-4 mb-lg-0">
-                <p class="font-weight-bold mb-2 text-primary text-small">April 2021 – Present</p>
+                <p class="font-weight-bold mb-2 text-primary text-small">
+                  2014 - 2018
+                </p>
+                <h2 class="h5 mb-0 text-uppercase">
+                  Bachelor of Technology in Computer Science
+                </h2>
+                <p class="text-small mb-0">
+                  Vishwakarma Institute of Technology
+                </p>
+                <span class="small text-muted">Pune, India</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Experience Section        -->
+    <section id="experience">
+      <div class="container">
+        <header class="mb-5 pb-4">
+          <p
+            class="
+              font-weight-bold
+              text-primary text-uppercase
+              letter-spacing-3
+            "
+          >
+            Yes. I've been around.
+          </p>
+          <h2 class="text-uppercase lined">Experience</h2>
+        </header>
+        <!--  Timeline -->
+        <ul class="timeline">
+          <!-- Timeline item-->
+          <li class="timeline-item ml-3 pb-4">
+            <div class="timeline-arrow"></div>
+            <div class="row no-gutter">
+              <div class="col-lg-5 mb-4 mb-lg-0">
+                <p class="font-weight-bold mb-2 text-primary text-small">
+                  April 2021 – Present
+                </p>
                 <h2 class="h5 mb-0 text-uppercase">Cryption Digital Studios</h2>
-                <p class="text-small mb-0">Full Stack Developer</p><span class="small text-muted">Pune, India</span>
+                <p class="text-small mb-0">Full Stack Developer</p>
+                <span class="small text-muted">Pune, India</span>
               </div>
               <div class="col-lg-7">
                 <ul>
-                  <li>Involved building a suite of user friendly crypto products for the normal retail investor who wants to invest in crypto but is intimidated by its complexity.</li>
+                  <li>
+                    Involved building a suite of user friendly crypto products
+                    for the normal retail investor who wants to invest in crypto
+                    but is intimidated by its complexity.
+                  </li>
                   <li>Using React.js frontend and node.js for backend.</li>
-                  <li>Working with web3 to interact with a local or remote ethereum node</li>
-                  <li>Also working with blockchain, solidity and Smart Contracts</li>
-                  <li>For Deployment working on AWS and Azure with Nginx configuration.</li>
+                  <li>
+                    Working with web3 to interact with a local or remote
+                    ethereum node
+                  </li>
+                  <li>
+                    Also working with blockchain, solidity and Smart Contracts
+                  </li>
+                  <li>
+                    For Deployment working on AWS and Azure with Nginx
+                    configuration.
+                  </li>
                   <li>Software/Platform – AWS, Linux, Azure.</li>
-                  <li>Languages/Tools – Node.js, React.js, Redux, loopback, Nginx, Solidity, Smart Contracts, Web3. </li>
+                  <li>
+                    Languages/Tools – Node.js, React.js, Redux, loopback, Nginx,
+                    Solidity, Smart Contracts, Web3.
+                  </li>
                 </ul>
               </div>
             </div>
           </li>
-        <!-- Timeline item-->
-        <li class="timeline-item ml-3 pb-4">
-          <div class="timeline-arrow"></div>
-          <div class="row no-gutter">
-            <div class="col-lg-5 mb-4 mb-lg-0">
-              <p class="font-weight-bold mb-2 text-primary text-small">May 2018 – April 2021</p>
-              <h2 class="h5 mb-0 text-uppercase">PlexusMD</h2>
-              <p class="text-small mb-0">Senior Software Enginner</p><span class="small text-muted">Pune, India</span>
+          <!-- Timeline item-->
+          <li class="timeline-item ml-3 pb-4">
+            <div class="timeline-arrow"></div>
+            <div class="row no-gutter">
+              <div class="col-lg-5 mb-4 mb-lg-0">
+                <p class="font-weight-bold mb-2 text-primary text-small">
+                  May 2018 – April 2021
+                </p>
+                <h2 class="h5 mb-0 text-uppercase">PlexusMD</h2>
+                <p class="text-small mb-0">Senior Software Enginner</p>
+                <span class="small text-muted">Pune, India</span>
+              </div>
+              <div class="col-lg-7">
+                <ul>
+                  <li>
+                    Handling entire products which involves design, development
+                    testing and deployment.
+                  </li>
+                  <li>Using React.js frontend and node.js for backend.</li>
+                  <li>
+                    Deployed products on AWS and Azure with Nginx configuration.
+                  </li>
+                  <li>Software/Platform – AWS, Linux, Azure.</li>
+                  <li>
+                    Languages/Tools – Node.js, React.js, Redux, loopback, Nginx,
+                    Rocket Chat.
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="col-lg-7">
-              <ul>
-                <li>Handling entire products which involves design, development testing and deployment.</li>
-                <li>Using React.js frontend and node.js for backend.</li>
-                <li>Deployed products on AWS and Azure with Nginx configuration.</li>
-                <li>Software/Platform – AWS, Linux, Azure.</li>
-                <li>Languages/Tools – Node.js, React.js, Redux, loopback, Nginx, Rocket Chat.</li>
-              </ul>
+          </li>
+          <!-- Timeline item-->
+          <li class="timeline-item ml-3 pb-4">
+            <div class="timeline-arrow"></div>
+            <div class="row no-gutter">
+              <div class="col-lg-5 mb-4 mb-lg-0">
+                <p class="font-weight-bold mb-2 text-primary text-small">
+                  Jan 2017 – May 2018
+                </p>
+                <h2 class="h5 mb-0 text-uppercase">LCEPL</h2>
+                <p class="text-small mb-0">Software Developer(Team Lead)</p>
+                <span class="small text-muted">Pune, India</span>
+              </div>
+              <div class="col-lg-7">
+                <ul>
+                  <li>
+                    Translating business requirements to technical solutions.
+                  </li>
+                  <li>
+                    Software Development to create new utilities as well as to
+                    customize Open Source Software.
+                  </li>
+                  <li>
+                    Conducted trainings in various states of India to roll out
+                    new Software and Project Management System.
+                  </li>
+                  <li>
+                    Conducting SCRUM Meetings and assisting new people get
+                    trained with software development.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- Timeline item-->
+          <li class="timeline-item ml-3 pb-4">
+            <div class="timeline-arrow"></div>
+            <div class="row no-gutter">
+              <div class="col-lg-5 mb-4 mb-lg-0">
+                <p class="font-weight-bold mb-2 text-primary text-small">
+                  August 2017 – December 2017
+                </p>
+                <h2 class="h5 mb-0 text-uppercase">LCEPL</h2>
+                <p class="text-small mb-0">Internship</p>
+                <span class="small text-muted">Pune, India</span>
+              </div>
+              <div class="col-lg-7">
+                <ul>
+                  <li>Understanding and evaluating open source products.</li>
+                  <li>
+                    Development on ruby and rails to customize Redmine, am open
+                    source project management platform.
+                  </li>
+                  <li>
+                    Writing JavaScript and css code to make UI and functionality
+                    changes.
+                  </li>
+                  <li>Contribute to technical design documentation.</li>
+                  <li>
+                    Creation of users in LDAP and integration with other
+                    devices.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Education Section        -->
+    <section class="bg-light" id="contact">
+      <div class="container">
+        <header class="mb-5 pb-4">
+          <p
+            class="
+              font-weight-bold
+              text-primary text-uppercase
+              letter-spacing-3
+            "
+          >
+            Call me, maybe.
+          </p>
+          <h2 class="text-uppercase lined">Contact</h2>
+        </header>
+        <div class="row" style="justify-content: center">
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <div class="px-4 py-5 text-center contact-item shadow-sm">
+              <i class="fas fa-map-marker-alt fa-2x mb-4"></i>
+              <h4 class="contact-item-title h5 text-uppercase">Location</h4>
+              <p class="text-small mb-0">Pune, India</p>
             </div>
           </div>
-        </li>
-        <!-- Timeline item-->
-        <li class="timeline-item ml-3 pb-4">
-          <div class="timeline-arrow"></div>
-          <div class="row no-gutter">
-            <div class="col-lg-5 mb-4 mb-lg-0">
-              <p class="font-weight-bold mb-2 text-primary text-small">Jan 2017 – May 2018</p>
-              <h2 class="h5 mb-0 text-uppercase">LCEPL</h2>
-              <p class="text-small mb-0">Software Developer(Team Lead)</p><span class="small text-muted">Pune,
-                India</span>
-            </div>
-            <div class="col-lg-7">
-              <ul>
-                <li>Translating business requirements to technical solutions.</li>
-                <li>Software Development to create new utilities as well as to customize Open Source Software.</li>
-                <li>Conducted trainings in various states of India to roll out new Software and Project Management
-                  System.</li>
-                <li>Conducting SCRUM Meetings and assisting new people get trained with software development.</li>
-              </ul>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <div class="px-4 py-5 text-center contact-item shadow-sm">
+              <i class="fas fa-mobile fa-2x mb-4"></i>
+              <h4 class="contact-item-title h5 text-uppercase">Phone</h4>
+              <p class="text-small mb-0">+91- 7507898330</p>
             </div>
           </div>
-        </li>
-        <!-- Timeline item-->
-        <li class="timeline-item ml-3 pb-4">
-          <div class="timeline-arrow"></div>
-          <div class="row no-gutter">
-            <div class="col-lg-5 mb-4 mb-lg-0">
-              <p class="font-weight-bold mb-2 text-primary text-small">August 2017 – December 2017 </p>
-              <h2 class="h5 mb-0 text-uppercase">LCEPL</h2>
-              <p class="text-small mb-0">Internship</p><span class="small text-muted">Pune, India</span>
-            </div>
-            <div class="col-lg-7">
-              <ul>
-                <li>Understanding and evaluating open source products.</li>
-                <li>Development on ruby and rails to customize Redmine, am open source project management platform.</li>
-                <li>Writing JavaScript and css code to make UI and functionality changes.</li>
-                <li>Contribute to technical design documentation.</li>
-                <li>Creation of users in LDAP and integration with other devices.</li>
-              </ul>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <!-- Education Section        -->
-  <section class="bg-light" id="contact">
-    <div class="container">
-      <header class="mb-5 pb-4">
-        <p class="font-weight-bold text-primary text-uppercase letter-spacing-3">Call me, maybe.</p>
-        <h2 class="text-uppercase lined">Contact</h2>
-      </header>
-      <div class="row" style="justify-content: center;">
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <div class="px-4 py-5 text-center contact-item shadow-sm"><i class="fas fa-map-marker-alt fa-2x mb-4"></i>
-            <h4 class="contact-item-title h5 text-uppercase">Location</h4>
-            <p class="text-small mb-0">Pune, India</p>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <a
+              class="
+                px-4
+                py-5
+                text-center
+                contact-item
+                shadow-sm
+                d-block
+                reset-anchor
+              "
+              href="mailto:prasenjitkaninde26@gmail.com"
+              ><i class="fas fa-envelope fa-2x mb-4"></i>
+              <h4 class="contact-item-title h5 text-uppercase">Email</h4>
+              <p class="text-small mb-0">prasenjitkaninde26@gmail.com</p>
+            </a>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <div class="px-4 py-5 text-center contact-item shadow-sm"><i class="fas fa-mobile fa-2x mb-4"></i>
-            <h4 class="contact-item-title h5 text-uppercase">Phone</h4>
-            <p class="text-small mb-0">+91- 7507898330</p>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer>
+      <div class="container text-center section-padding-y">
+        <div class="row px-4">
+          <div class="col-lg-7 mx-auto">
+            <h2 class="text-uppercase mb-0">Prasenjit Kaninde</h2>
+            <h6 class="text-primary text-uppercase mb-0 letter-spacing-3">
+              Full Stack Developer
+            </h6>
+            <p class="text-muted my-4">
+              I'm a Full Stack Developer based in Pune, India.
+            </p>
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a
+                  class="social-link"
+                  href="https://www.facebook.com/prasenjit.kaninde"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a class="social-link" href="https://twitter.com/prasenjit_26"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  class="social-link"
+                  href="https://www.linkedin.com/in/prasenjit-kaninde-a37925118/"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  class="social-link"
+                  href="https://www.instagram.com/prasenjiit/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0"><a
-            class="px-4 py-5 text-center contact-item shadow-sm d-block reset-anchor"
-            href="mailto:prasenjitkaninde26@gmail.com"><i class="fas fa-envelope fa-2x mb-4"></i>
-            <h4 class="contact-item-title h5 text-uppercase">Email</h4>
-            <p class="text-small mb-0">prasenjitkaninde26@gmail.com</p>
-          </a></div>
       </div>
-    </div>
-  </section>
-  <!-- Footer-->
-  <footer>
-    <div class="container text-center section-padding-y">
-      <div class="row px-4">
-        <div class="col-lg-7 mx-auto">
-          <h2 class="text-uppercase mb-0">Prasenjit Kaninde </h2>
-          <h6 class="text-primary text-uppercase mb-0 letter-spacing-3">Full Stack Developer</h6>
-          <p class="text-muted my-4">I'm a Full Stack Developer based in Pune, India.</p>
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item"><a class="social-link" href="https://www.facebook.com/prasenjit.kaninde"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="list-inline-item"><a class="social-link" href="https://twitter.com/prasenjit_26"><i class="fab fa-twitter"></i></a></li>
-            <li class="list-inline-item"><a class="social-link"
-                href="https://www.linkedin.com/in/prasenjit-kaninde-a37925118/"><i class="fab fa-linkedin"></i></a></li>
-            <li class="list-inline-item"><a class="social-link" href="https://www.instagram.com/prasenjiit/"><i class="fab fa-instagram"></i></a></li>
-          </ul>
+      <div class="copyrights px-4">
+        <div class="container py-4 border-top text-center">
+          <p class="mb-0 text-muted py-2">
+            &copy; All rights reserved. | Prasenjit Kaninde
+          </p>
         </div>
       </div>
-    </div>
-    <div class="copyrights px-4">
-      <div class="container py-4 border-top text-center">
-        <p class="mb-0 text-muted py-2">&copy; All rights reserved. | Prasenjit Kaninde</p>
-      </div>
-    </div>
-  </footer>
-  <!-- JavaScript files-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="js/front.js"></script>
-  <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-</body>
-
+    </footer>
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/front.js"></script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </body>
 </html>
